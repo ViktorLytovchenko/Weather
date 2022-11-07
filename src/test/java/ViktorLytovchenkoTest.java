@@ -556,6 +556,7 @@ public class ViktorLytovchenkoTest {
 
         int actualResult = countButton;
 
+
         Assert.assertEquals(actualResult, expectedResult);
         driver.quit();
 
