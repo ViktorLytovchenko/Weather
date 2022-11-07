@@ -492,6 +492,7 @@ public class ViktorLytovchenkoTest {
 //4.  Подтвердить, что вы перешли на страницу в ссылке которой содержатся слова “find” и “Rome”
 //5.  Подтвердить, что в строке поиска на новой странице вписано слово “Rome”
 
+
     @Test
     public void testTypeInSearchBarRome() throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "/Applications/ChromeDrivers/chromedriver/");
