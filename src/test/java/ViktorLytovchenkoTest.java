@@ -562,6 +562,4 @@ public class ViktorLytovchenkoTest {
     }
 
 
-
-
 }
