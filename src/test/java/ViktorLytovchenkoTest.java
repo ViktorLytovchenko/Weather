@@ -77,7 +77,7 @@ public class ViktorLytovchenkoTest {
 
     @Test
     public void testTitleOpenWeatherMap() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver","/Applications/ChromeDrivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Applications/ChromeDrivers/chromedriver");
         WebDriver driver = new ChromeDriver();
 
         String url = "https://openweathermap.org/";
@@ -104,13 +104,13 @@ public class ViktorLytovchenkoTest {
         driver.quit();
     }
 
-//    TC_11_02
+    //    TC_11_02
 //1.  Открыть базовую ссылку
 //2.  Нажать на единицы измерения Imperial: °F, mph
 //3.  Подтвердить, что температура для города показана в Фарингейтах
     @Test
     public void testTemperatureForTheCityFahrenheit() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver","/Applications/ChromeDrivers/chromedriver/");
+        System.setProperty("webdriver.chrome.driver", "/Applications/ChromeDrivers/chromedriver/");
         WebDriver driver = new ChromeDriver();
 
         String url = "https://openweathermap.org/";
@@ -146,7 +146,7 @@ public class ViktorLytovchenkoTest {
 
     @Test
     public void testConfirmWhatOnThePageUseCookies() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver","/Applications/ChromeDrivers/chromedriver/");
+        System.setProperty("webdriver.chrome.driver", "/Applications/ChromeDrivers/chromedriver/");
         WebDriver driver = new ChromeDriver();
 
         String url = "https://openweathermap.org/";
@@ -186,7 +186,7 @@ public class ViktorLytovchenkoTest {
 
     @Test
     public void testConfirmWhatSupportThreeSubmenu() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver","/Applications/ChromeDrivers/chromedriver/");
+        System.setProperty("webdriver.chrome.driver", "/Applications/ChromeDrivers/chromedriver/");
         WebDriver driver = new ChromeDriver();
 
         String url = "https://openweathermap.org/";
@@ -233,7 +233,7 @@ public class ViktorLytovchenkoTest {
 
     @Test
     public void testFromReCaptchaVerificationFailed() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver","/Applications/ChromeDrivers/chromedriver/");
+        System.setProperty("webdriver.chrome.driver", "/Applications/ChromeDrivers/chromedriver/");
         WebDriver driver = new ChromeDriver();
         String url = "https://openweathermap.org/";
         String expectedResult1 = "reCAPTCHA verification failed, please try again.";
@@ -431,8 +431,8 @@ public class ViktorLytovchenkoTest {
         spanHeadingCelsium.click();
         Thread.sleep(4000);
 
-        String spanHeadingTextCelsium  = spanHeading.getText();
-        String actualResult1 = spanHeadingTextCelsium.substring(spanHeadingTextCelsium.length() -2);
+        String spanHeadingTextCelsium = spanHeading.getText();
+        String actualResult1 = spanHeadingTextCelsium.substring(spanHeadingTextCelsium.length() - 2);
 
         Assert.assertEquals(actualResult1, expectedResult1);
         driver.quit();
@@ -506,9 +506,6 @@ public class ViktorLytovchenkoTest {
     }
 
 
-
-
-
 //    TC_11_10
 //1.  Открыть базовую ссылку
 //2.  Нажать на пункт меню API
@@ -538,5 +535,4 @@ public class ViktorLytovchenkoTest {
         Assert.assertEquals(actualResult, expectedResult);
         driver.quit();
     }
-
 }
