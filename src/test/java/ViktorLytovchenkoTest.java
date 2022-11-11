@@ -62,13 +62,10 @@ public class ViktorLytovchenkoTest {
                 By.xpath("//div[@id = 'weather-widget']//h2")
         );
 
-
         Thread.sleep(2000);
         String actualResult = h2CityCountryHeader.getText();
 
-
         Assert.assertEquals(actualResult, expectedResult);
-
         driver.quit();
     }
 
@@ -181,7 +178,6 @@ public class ViktorLytovchenkoTest {
         Assert.assertEquals(actualResult1, expectedResult1);
         Assert.assertEquals(actualResult2, expectedResult2);
         Assert.assertEquals(actualResult3, expectedResult3);
-
         driver.quit();
     }
 //    TC_11_04
@@ -225,7 +221,6 @@ public class ViktorLytovchenkoTest {
         Assert.assertEquals(actualResult1, expectedResult1);
         Assert.assertEquals(actualResult2, expectedResult2);
         Assert.assertEquals(actualResult3, expectedResult3);
-
         driver.quit();
     }
 
@@ -308,11 +303,7 @@ public class ViktorLytovchenkoTest {
         String actualResult = displayRecaptchaOnWindow.getText();
 
         Assert.assertEquals(actualResult, expectedResult1);
-
         driver.quit();
-
-
-
     }
 
     //    TC_11_06
@@ -335,7 +326,6 @@ public class ViktorLytovchenkoTest {
         String message = "Hi Lilu we are waiting for you";
 
         String expectedResult = "can't be blank";
-
 
         driver.get(url);
 
@@ -399,7 +389,6 @@ public class ViktorLytovchenkoTest {
         String actualResult = confirmErrorEmail.getText();
 
         Assert.assertEquals(actualResult, expectedResult);
-
         driver.quit();
     }
 
@@ -446,12 +435,7 @@ public class ViktorLytovchenkoTest {
         String actualResult1 = spanHeadingTextCelsium.substring(spanHeadingTextCelsium.length() -2);
 
         Assert.assertEquals(actualResult1, expectedResult1);
-
         driver.quit();
-
-
-
-
     }
 
 //    TC_11_08
@@ -479,9 +463,7 @@ public class ViktorLytovchenkoTest {
         String actualResult = driver.getCurrentUrl();
 
         Assert.assertEquals(actualResult, expectedResult);
-
         driver.quit();
-
     }
 
 //    TC_11_09
@@ -520,9 +502,7 @@ public class ViktorLytovchenkoTest {
 
         Assert.assertEquals(actualResult, expectedResult);
         Assert.assertEquals(actualResult1, expectedResult1);
-
         driver.quit();
-
     }
 
 
@@ -555,12 +535,8 @@ public class ViktorLytovchenkoTest {
 
         int actualResult = countButton;
 
-
         Assert.assertEquals(actualResult, expectedResult);
         driver.quit();
-
     }
-
-
 
 }
